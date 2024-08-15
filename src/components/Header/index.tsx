@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.jpeg";
 import { Menu } from "../Menu";
+import { Slider } from "../Slider";
 
 export const Header = () => {
   return (
@@ -19,6 +19,9 @@ export const Header = () => {
           <Menu />
         </div>
       </nav>
+      <div className="mt-4">
+        <Slider />
+      </div>
     </header>
   );
 };
