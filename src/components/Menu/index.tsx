@@ -19,7 +19,9 @@ export const Menu = () => {
         </MenubarTrigger>
         <MenubarContent>
           <MenubarItem className="hover:bg-primaryOrange cursor-pointer">
-            <a href="/portfolio/comercial">Projetos Comerciais</a>
+            <a href="https://morada21-portfolio-irux-oaqsiizny.vercel.app/portfolio/comercial">
+              Projetos Comerciais
+            </a>
           </MenubarItem>
           <MenubarSeparator />
           <MenubarSub>
@@ -28,12 +30,12 @@ export const Menu = () => {
             </MenubarSubTrigger>
             <MenubarSubContent>
               <MenubarItem>
-                <a href="/portfolio/residencial/arquitetônico">
+                <a href="https://morada21-portfolio-irux-oaqsiizny.vercel.app/portfolio/residencial/arquitetônico">
                   Arquitetônicos
                 </a>
               </MenubarItem>
               <MenubarItem>
-                <a href="/portfolio/residencial/designInteriores">
+                <a href="https://morada21-portfolio-irux-oaqsiizny.vercel.app/portfolio/residencial/designInteriores">
                   Design de Interiores
                 </a>
               </MenubarItem>
@@ -44,7 +46,10 @@ export const Menu = () => {
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger className="text-md text-white font-bold hover:bg-primaryOrange">
-          <a href="/contact" target="_parent">
+          <a
+            href="https://morada21-portfolio-irux-oaqsiizny.vercel.app/contact"
+            target="_parent"
+          >
             Contato
           </a>
         </MenubarTrigger>

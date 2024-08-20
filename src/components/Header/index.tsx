@@ -1,10 +1,9 @@
 import Logo from "../../assets/logo.jpeg";
 import { Menu } from "../Menu";
-import { Slider } from "../Slider";
 
 export const Header = () => {
   return (
-    <header className="p-3">
+    <header className="p-3 bg-primaryGreen px-[70px]">
       <nav className="flex justify-between items-center">
         <div>
           <a href="/">
@@ -19,9 +18,6 @@ export const Header = () => {
           <Menu />
         </div>
       </nav>
-      <div className="mt-4">
-        <Slider />
-      </div>
     </header>
   );
 };
