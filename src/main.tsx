@@ -9,6 +9,7 @@ import { ComercialProjects } from "./pages/ComercialProjects/index.tsx";
 import { ArchitecturalProjects } from "./pages/ArchitecturalProjects/index.tsx";
 import { InteriorDesigns } from "./pages/InteriorDesigns/index.tsx";
 import { Contact } from "lucide-react";
+import { Home } from "./pages/Home/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />,
+        element: <Home />,
       },
       {
         path: "/portfolio/comercial",
@@ -42,8 +43,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+    <Header />
     <Container>
-      <Header />
       <RouterProvider router={router} />
     </Container>
   </React.StrictMode>

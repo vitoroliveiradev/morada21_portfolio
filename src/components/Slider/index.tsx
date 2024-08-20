@@ -1,11 +1,6 @@
+import Autoplay from "embla-carousel-autoplay";
 import { Card } from "../ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
 import image1 from "../../assets/ArchitecturalProjects/RENDER POSTAGEM 4.jpg";
 import image2 from "../../assets/ArchitecturalProjects/RENDER POSTAGEM 5.jpg";
@@ -25,7 +20,14 @@ const cardsSlides = [
 
 export const Slider = () => {
   return (
-    <Carousel className="w-full border-none">
+    <Carousel
+      className="w-full border-none"
+      plugins={[
+        Autoplay({
+          delay: 3000,
+        }),
+      ]}
+    >
       <CarouselContent className="h-[80vh] border-none">
         {cardsSlides.map((card, index) => (
           <CarouselItem key={index}>
@@ -39,8 +41,6 @@ export const Slider = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   );
 };
