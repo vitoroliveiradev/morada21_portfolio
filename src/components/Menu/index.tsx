@@ -45,9 +45,7 @@ export const Menu = () => {
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger className="text-md text-white font-bold hover:bg-primaryOrange">
-          <Link to="/contact" target="_parent">
-            Contato
-          </Link>
+          <Link to="/contact">Contato</Link>
         </MenubarTrigger>
       </MenubarMenu>
     </Menubar>
