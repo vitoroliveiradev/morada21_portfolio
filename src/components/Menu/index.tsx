@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   Menubar,
   MenubarContent,
@@ -19,9 +20,7 @@ export const Menu = () => {
         </MenubarTrigger>
         <MenubarContent>
           <MenubarItem className="hover:bg-primaryOrange cursor-pointer">
-            <a href="https://morada21-portfolio-irux-oaqsiizny.vercel.app/portfolio/comercial">
-              Projetos Comerciais
-            </a>
+            <Link to="/portfolio/comercial">Projetos Comerciais</Link>
           </MenubarItem>
           <MenubarSeparator />
           <MenubarSub>
@@ -30,14 +29,14 @@ export const Menu = () => {
             </MenubarSubTrigger>
             <MenubarSubContent>
               <MenubarItem>
-                <a href="https://morada21-portfolio-irux-oaqsiizny.vercel.app/portfolio/residencial/arquitetônico">
+                <Link to="/portfolio/residencial/arquitetônico">
                   Arquitetônicos
-                </a>
+                </Link>
               </MenubarItem>
               <MenubarItem>
-                <a href="https://morada21-portfolio-irux-oaqsiizny.vercel.app/portfolio/residencial/designInteriores">
+                <Link to="/portfolio/residencial/designInteriores">
                   Design de Interiores
-                </a>
+                </Link>
               </MenubarItem>
             </MenubarSubContent>
           </MenubarSub>
@@ -46,12 +45,9 @@ export const Menu = () => {
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger className="text-md text-white font-bold hover:bg-primaryOrange">
-          <a
-            href="https://morada21-portfolio-irux-oaqsiizny.vercel.app/contact"
-            target="_parent"
-          >
+          <Link to="/contact" target="_parent">
             Contato
-          </a>
+          </Link>
         </MenubarTrigger>
       </MenubarMenu>
     </Menubar>
