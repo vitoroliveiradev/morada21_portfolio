@@ -6,7 +6,7 @@ import { ArchitecturalProjects } from "./pages/ArchitecturalProjects";
 import { InteriorDesigns } from "./pages/InteriorDesigns";
 import { Contact } from "./pages/Contact";
 import { Header } from "./components/Header";
-import { Container } from "./components/Container";
+import { Footer } from "./components/Footer";
 
 const routes = [
   {
@@ -33,14 +33,15 @@ const routes = [
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Container>
+      <div className="bg-[rgb(255 255 255)]">
+        <Header />
         <Routes>
           {routes.map((item) => (
             <Route key={item.path} path={item.path} element={item.element} />
           ))}
         </Routes>
-      </Container>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
