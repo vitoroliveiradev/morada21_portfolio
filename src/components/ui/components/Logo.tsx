@@ -14,7 +14,11 @@ export const Logo = () => {
         onMouseOver={handleChangeImage}
         onMouseOut={handleRemoveImage}
       >
-        <img className="w-20 h-20 rounded-full" src={image} alt="Logo morada 21" />
+        <img
+          className="w-20 h-20 rounded-full"
+          src={image}
+          alt="Logo morada 21"
+        />
       </a>
     </div>
   );
