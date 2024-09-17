@@ -63,7 +63,7 @@
 }
 
 body {
-  background-color: var(--primary-green);
+background-color: var(--primaryGray);
 }
 
 @layer base {

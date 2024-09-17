@@ -1,54 +1,104 @@
 import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarSub,
-  MenubarSubContent,
-  MenubarSubTrigger,
-  MenubarTrigger,
-} from "../ui/menubar";
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "../ui/navigation-menu";
+import { Link } from "react-router-dom";
 
-export const Menu = () => {
+// const components: { title: string; href: string; description: string }[] = [
+//   {
+//     title: "Alert Dialog",
+//     href: "/docs/primitives/alert-dialog",
+//     description:
+//       "A modal dialog that interrupts the user with important content and expects a response.",
+//   },
+//   {
+//     title: "Hover Card",
+//     href: "/docs/primitives/hover-card",
+//     description:
+//       "For sighted users to preview content available behind a link.",
+//   },
+//   {
+//     title: "Progress",
+//     href: "/docs/primitives/progress",
+//     description:
+//       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+//   },
+//   {
+//     title: "Scroll-area",
+//     href: "/docs/primitives/scroll-area",
+//     description: "Visually or semantically separates content.",
+//   },
+//   {
+//     title: "Tabs",
+//     href: "/docs/primitives/tabs",
+//     description:
+//       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+//   },
+//   {
+//     title: "Tooltip",
+//     href: "/docs/primitives/tooltip",
+//     description:
+//       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+//   },
+// ];
+
+export function Menu() {
   return (
-    <Menubar className="bg-transparent border-none">
-      <MenubarMenu>
-        <MenubarTrigger className="text-white text-md font-bold hover:bg-primaryOrange cursor-pointer">
-          Portifólio
-        </MenubarTrigger>
-        <MenubarContent>
-          <MenubarItem className="hover:bg-primaryOrange cursor-pointer">
-            <a href="/portfolio/comercial">Projetos Comerciais</a>
-          </MenubarItem>
-          <MenubarSeparator />
-          <MenubarSub>
-            <MenubarSubTrigger className="cursor-pointer">
+    <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="text-white hover:text-white">
+            Projetos
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <Link to="/portfolio/comercial">
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} cursor-pointer`}
+              >
+                Projetos Comerciais
+              </NavigationMenuLink>
+            </Link>
+            <Link to="/">
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} cursor-pointer`}
+              >
+                Projetos Residenciais
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="text-white hover:text-white">
+            Escritório
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <NavigationMenuLink
+              className={`${navigationMenuTriggerStyle()} cursor-pointer w-[100%]`}
+            >
+              Escritório
+            </NavigationMenuLink>
+            <NavigationMenuLink
+              className={`${navigationMenuTriggerStyle()} cursor-pointer`}
+            >
               Projetos Residenciais
-            </MenubarSubTrigger>
-            <MenubarSubContent>
-              <MenubarItem>
-                <a href="/portfolio/residencial/arquitetônico">
-                  Arquitetônicos
-                </a>
-              </MenubarItem>
-              <MenubarItem>
-                <a href="/portfolio/residencial/designInteriores">
-                  Design de Interiores
-                </a>
-              </MenubarItem>
-            </MenubarSubContent>
-          </MenubarSub>
-          <MenubarSeparator />
-        </MenubarContent>
-      </MenubarMenu>
-      <MenubarMenu>
-        <MenubarTrigger className="text-md text-white font-bold hover:bg-primaryOrange">
-          <a href="/contact" target="_parent">
-            Contato
-          </a>
-        </MenubarTrigger>
-      </MenubarMenu>
-    </Menubar>
+            </NavigationMenuLink>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link to="/contact">
+            <NavigationMenuLink
+              className={`${navigationMenuTriggerStyle()} cursor-pointer text-white hover:text-white`}
+            >
+              Contato
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
   );
-};
+}

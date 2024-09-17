@@ -1,23 +1,20 @@
-import { Link } from "react-router-dom";
-import Logo from "../../assets/logo.jpeg";
 import { Menu } from "../Menu";
+import { Logo } from "../ui/components/Logo";
 
-export const Header = () => {
+type HeaderProps = {
+  isFooter?: boolean;
+};
+
+export const Header = ({ isFooter }: HeaderProps) => {
   return (
-    <header className="p-3">
+    <header
+      className={`p-3 ${
+        !isFooter ? "bg-primaryGreen fixed z-50 w-full" : "bg-primaryGreen"
+      } px-[70px] `}
+    >
       <nav className="flex justify-between items-center">
-        <div>
-          <a href="/">
-            <img
-              className="w-16 rounded-full"
-              src={Logo}
-              alt="Logo morada 21"
-            />
-          </a>
-        </div>
-        <div>
-          <Menu />
-        </div>
+        <Logo />
+        <Menu />
       </nav>
     </header>
   );
