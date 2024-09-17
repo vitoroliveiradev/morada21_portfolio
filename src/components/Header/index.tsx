@@ -1,16 +1,20 @@
 import { Menu } from "../Menu";
 import { Logo } from "../ui/components/Logo";
 
-export const Header = () => {
+type HeaderProps = {
+  isFooter?: boolean;
+};
+
+export const Header = ({ isFooter }: HeaderProps) => {
   return (
-    <header className="p-3 bg-primaryGreen px-[70px]">
+    <header
+      className={`p-3 ${
+        !isFooter ? "bg-primaryGreen fixed z-50 w-full" : "bg-primaryGreen"
+      } px-[70px] `}
+    >
       <nav className="flex justify-between items-center">
-        <div>
-          <Logo />
-        </div>
-        <div>
-          <Menu />
-        </div>
+        <Logo />
+        <Menu />
       </nav>
     </header>
   );

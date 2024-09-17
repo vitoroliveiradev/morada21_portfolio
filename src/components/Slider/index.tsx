@@ -1,6 +1,12 @@
 import Autoplay from "embla-carousel-autoplay";
 import { Card } from "../ui/card";
-import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
 
 import image1 from "../../assets/ArchitecturalProjects/RENDER POSTAGEM 4.jpg";
 import image2 from "../../assets/ArchitecturalProjects/RENDER POSTAGEM 5.jpg";
@@ -21,7 +27,7 @@ const cardsSlides = [
 export const Slider = () => {
   return (
     <Carousel
-      className="w-full border-none"
+      className="w-full mx-auto border-none relative"
       plugins={[
         Autoplay({
           delay: 3000,
@@ -41,6 +47,8 @@ export const Slider = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
+      <CarouselPrevious variant="ghost" className="absolute left-[10px]" />
+      <CarouselNext variant="ghost" className="absolute right-[10px]" />
     </Carousel>
   );
 };
