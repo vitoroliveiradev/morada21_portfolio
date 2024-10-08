@@ -52,40 +52,49 @@ export function Menu() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-white hover:text-white">
+          <NavigationMenuTrigger className="text-white hover:text-white text-lg">
             Projetos
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <Link to="/portfolio/comercial">
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} cursor-pointer`}
+                className={`${navigationMenuTriggerStyle()} cursor-pointer `}
               >
-                Projetos Comerciais
+                Projetos Arquitetônicos
               </NavigationMenuLink>
             </Link>
             <Link to="/">
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} cursor-pointer`}
               >
-                Projetos Residenciais
+                Projetos de Design de Interiores
+              </NavigationMenuLink>
+            </Link>
+            <Link to="/">
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} cursor-pointer`}
+              >
+                Projetos Comerciais
               </NavigationMenuLink>
             </Link>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-white hover:text-white">
+          <NavigationMenuTrigger className="text-white hover:text-white text-lg">
             Escritório
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <NavigationMenuLink
               className={`${navigationMenuTriggerStyle()} cursor-pointer w-[100%]`}
+              href="/sobre/empresa"
             >
-              Escritório
+              História
             </NavigationMenuLink>
             <NavigationMenuLink
+              href="/sobre/equipe"
               className={`${navigationMenuTriggerStyle()} cursor-pointer`}
             >
-              Projetos Residenciais
+              Equipe
             </NavigationMenuLink>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -94,7 +103,7 @@ export function Menu() {
             <NavigationMenuLink
               className={`${navigationMenuTriggerStyle()} cursor-pointer text-white hover:text-white`}
             >
-              Contato
+              <span className="text-lg">Contato</span>
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
