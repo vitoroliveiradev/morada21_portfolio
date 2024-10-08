@@ -9,10 +9,10 @@ export const Header = ({ isFooter }: HeaderProps) => {
   return (
     <header
       className={`p-3 ${
-        !isFooter ? "bg-primaryGreen fixed z-50 w-full" : "bg-primaryGreen"
+        !isFooter ? "bg-primaryGreen z-50 w-full" : "bg-primaryGreen"
       } px-[70px] `}
     >
-      <nav className="flex justify-between items-center">
+      <nav className="flex justify-between items-center ">
         <Logo />
         <Menu />
       </nav>

@@ -1,12 +1,10 @@
-import { Instagram, Facebook } from "lucide-react";
-import TikTok from "../../assets/icons/tik-tok.png";
-// import { Header } from "../Header";
+import { Instagram } from "lucide-react";
+import WhatsApp from "../../assets/icons/whatsapp.png";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="mt-8 bg-primaryGreen h-[600px] relative text-[#cfcfcf]">
-      {/* <Header isFooter /> */}
+    <footer className="mt-8 bg-primaryGreen h-[600px] text-[#cfcfcf] pt-8">
       <div className="px-[90px] flex flex-col gap-10 ">
         <div>
           <h2>Morada 21 Ltda</h2>
@@ -32,23 +30,18 @@ export const Footer = () => {
       </div>
       <div className="px-[90px] mt-12 flex gap-4">
         <Link to="/" className="rounded-full bg-[#e6e5e5] text-black p-1">
-          <Facebook />
-        </Link>
-        <Link to="/" className="rounded-full bg-[#e6e5e5] text-black p-1">
           <Instagram />
         </Link>
         <Link to="/" className="rounded-full bg-[#e6e5e5] p-1">
           <img
-            src={TikTok}
-            alt="TikTok"
+            src={WhatsApp}
+            alt="WhatsApp"
             className="w-[25px] h-[25px] rounded-full"
           />
         </Link>
       </div>
       <div className="px-[90px] flex items-center justify-center">
-        <span className="absolute bottom-2">
-          ©Copyright 2024 Morada 21 - Todos os direitos reservados
-        </span>
+        <span>©Copyright 2024 Morada 21 - Todos os direitos reservados</span>
       </div>
     </footer>
   );

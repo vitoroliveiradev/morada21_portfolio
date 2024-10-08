@@ -7,6 +7,8 @@ import { InteriorDesigns } from "./pages/InteriorDesigns";
 import { Contact } from "./pages/Contact";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { AboutCompany } from "./components/AboutCompany";
+import { AboutTeam } from "./components/AboutTeam";
 
 const routes = [
   {
@@ -28,6 +30,14 @@ const routes = [
   {
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    path: "/sobre/empresa",
+    element: <AboutCompany />,
+  },
+  {
+    path: "/sobre/equipe",
+    element: <AboutTeam />,
   },
 ];
 function App() {
