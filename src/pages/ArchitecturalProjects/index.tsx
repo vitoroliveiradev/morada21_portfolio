@@ -1,6 +1,7 @@
 import Image1 from "../../assets/ArchitecturalProjects/RENDER POSTAGEM 4.jpg";
 import Image2 from "../../assets/ArchitecturalProjects/RENDER POSTAGEM 5.jpg";
 import Image3 from "../../assets/ArchitecturalProjects/render total.jpg";
+import { Container } from "../../components/Container";
 
 const cards = [
   {
@@ -52,18 +53,28 @@ const cards = [
 
 export const ArchitecturalProjects = () => {
   return (
-    <div className="p-0 mt-5 mb-5">
-      <div className="flex gap-4 flex-wrap justify-center items-center">
-        {cards.map((item) => (
-          <div className="bg-white shadow-2xl h-[28 0px] w-[350px] rounded-sm">
-            <img src={item.image} alt="Imagem 2" className="w-100 rounded-sm" />
-            <div className="p-2">
-              <h3 className="text-xl">{item.title}</h3>
-              <p className="text-xs mt-3">{item.location}</p>
+    <Container>
+      <div className="p-0 mt-5 mb-5">
+        <div className="mb-6">
+          <h1 className="text-[40px]">Contato</h1>
+          <hr />
+        </div>
+        <div className="flex gap-4 flex-wrap justify-center items-center">
+          {cards.map((item) => (
+            <div className="bg-white shadow-2xl h-[28 0px] w-[350px] rounded-sm">
+              <img
+                src={item.image}
+                alt="Imagem 2"
+                className="w-100 rounded-sm"
+              />
+              <div className="p-2">
+                <h3 className="text-xl">{item.title}</h3>
+                <p className="text-xs mt-3">{item.location}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </Container>
   );
 };

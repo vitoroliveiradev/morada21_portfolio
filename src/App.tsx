@@ -16,16 +16,16 @@ const routes = [
     element: <Home />,
   },
   {
-    path: "/portfolio/comercial",
-    element: <ComercialProjects />,
-  },
-  {
-    path: "/portfolio/residencial/arquitetônico",
+    path: "/projetos/arquitetonicos",
     element: <ArchitecturalProjects />,
   },
   {
-    path: "/portfolio/residencial/designInteriores",
+    path: "/projetos/designInteriores",
     element: <InteriorDesigns />,
+  },
+  {
+    path: "/projetos/comercial",
+    element: <ComercialProjects />,
   },
   {
     path: "/contact",
