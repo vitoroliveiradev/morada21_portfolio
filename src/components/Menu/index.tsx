@@ -56,21 +56,21 @@ export function Menu() {
             Projetos
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <Link to="/portfolio/comercial">
+            <Link to="/projetos/arquitetonicos">
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} cursor-pointer `}
               >
                 Projetos Arquitetônicos
               </NavigationMenuLink>
             </Link>
-            <Link to="/">
+            <Link to="/projetos/designInteriores">
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} cursor-pointer`}
               >
                 Projetos de Design de Interiores
               </NavigationMenuLink>
             </Link>
-            <Link to="/">
+            <Link to="/projetos/comercial">
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} cursor-pointer`}
               >

@@ -1,11 +1,11 @@
 import { useState } from "react";
-import LogoImage from "../../../assets/logo-transparent.png";
-import LogoText from "../../../assets/logo2-transparent.png";
+import Logo1 from "../../../assets/logo/02 - SIMBOLOGIA.png";
+import Logo2 from "../../../assets/logo/01 - LOGO.png";
 
 export const Logo = () => {
-  const [image, setImage] = useState(LogoImage);
-  const handleChangeImage = () => setImage(LogoText);
-  const handleRemoveImage = () => setImage(LogoImage);
+  const [image, setImage] = useState(Logo1);
+  const handleChangeImage = () => setImage(Logo2);
+  const handleRemoveImage = () => setImage(Logo1);
 
   return (
     <div>
@@ -15,7 +15,7 @@ export const Logo = () => {
         onMouseOut={handleRemoveImage}
       >
         <img
-          className="w-20 h-20 rounded-full"
+          className="w-[150px] h-[150px] rounded-full"
           src={image}
           alt="Logo morada 21"
         />
