@@ -12,7 +12,7 @@ import { AboutTeam } from "./components/AboutTeam";
 
 const routes = [
   {
-    path: "/",
+  path: "/",
     element: <Home />,
   },
   {

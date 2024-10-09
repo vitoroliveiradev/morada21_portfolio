@@ -84,18 +84,20 @@ export function Menu() {
             Escritório
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <NavigationMenuLink
-              className={`${navigationMenuTriggerStyle()} cursor-pointer w-[100%]`}
-              href="/sobre/empresa"
-            >
-              História
-            </NavigationMenuLink>
-            <NavigationMenuLink
-              href="/sobre/equipe"
-              className={`${navigationMenuTriggerStyle()} cursor-pointer`}
-            >
-              Equipe
-            </NavigationMenuLink>
+            <Link to="/sobre/empresa">
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} cursor-pointer w-[100%]`}
+              >
+                História
+              </NavigationMenuLink>
+            </Link>
+            <Link to="/sobre/equipe">
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} cursor-pointer`}
+              >
+                Equipe
+              </NavigationMenuLink>
+            </Link>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
