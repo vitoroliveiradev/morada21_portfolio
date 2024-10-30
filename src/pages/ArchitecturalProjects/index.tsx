@@ -56,7 +56,7 @@ export const ArchitecturalProjects = () => {
     <Container>
       <div className="p-0 mt-5 mb-5">
         <div className="mb-6">
-          <h1 className="text-[40px]">Contato</h1>
+          <h1 className="text-[30px]">Projetos Arquitetônicos</h1>
           <hr />
         </div>
         <div className="flex gap-4 flex-wrap justify-center items-center">
