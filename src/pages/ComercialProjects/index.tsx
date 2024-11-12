@@ -4,6 +4,7 @@ import { cards } from "../../utils/cards";
 
 export const ComercialProjects = () => {
   const navigate = useNavigate();
+
   return (
     <Container>
       <h1 className="text-[30px] my-4">Projetos Comerciais</h1>
