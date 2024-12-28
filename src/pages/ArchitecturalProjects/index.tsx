@@ -1,57 +1,10 @@
-import Image1 from "../../assets/ArchitecturalProjects/RENDER POSTAGEM 4.jpg";
-import Image2 from "../../assets/ArchitecturalProjects/RENDER POSTAGEM 5.jpg";
-import Image3 from "../../assets/ArchitecturalProjects/render total.jpg";
+import { useNavigate } from "react-router-dom";
 import { Container } from "../../components/Container";
-
-const cards = [
-  {
-    image: Image1,
-    title: "Projeto 01",
-    location: "CUNHA, SP",
-  },
-  {
-    image: Image2,
-    title: "Projeto 02",
-    location: "MARINGÁ, PR",
-  },
-  {
-    image: Image3,
-    title: "Projeto 03",
-    location: "SÃO BERNARDO DO CAMPO, SP",
-  },
-  {
-    image: Image1,
-    title: "Projeto 01",
-    location: "CUNHA, SP",
-  },
-  {
-    image: Image2,
-    title: "Projeto 02",
-    location: "MARINGÁ, PR",
-  },
-  {
-    image: Image3,
-    title: "Projeto 03",
-    location: "SÃO BERNARDO DO CAMPO, SP",
-  },
-  {
-    image: Image1,
-    title: "Projeto 01",
-    location: "CUNHA, SP",
-  },
-  {
-    image: Image2,
-    title: "Projeto 02",
-    location: "MARINGÁ, PR",
-  },
-  {
-    image: Image3,
-    title: "Projeto 03",
-    location: "SÃO BERNARDO DO CAMPO, SP",
-  },
-];
+import { Architecturalcards } from "../../utils/architecturalCards";
 
 export const ArchitecturalProjects = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <div className="p-0 mt-5 mb-5">
@@ -60,13 +13,32 @@ export const ArchitecturalProjects = () => {
           <hr />
         </div>
         <div className="flex gap-4 flex-wrap justify-center items-center">
-          {cards.map((item) => (
-            <div className="bg-white shadow-2xl h-[28 0px] w-[350px] rounded-sm">
-              <img
-                src={item.image}
-                alt="Imagem 2"
-                className="w-100 rounded-sm"
-              />
+          {Architecturalcards.map((item) => (
+            <div
+              className="bg-white shadow-2xl h-[28 0px] w-[350px] rounded-sm"
+              onClick={() => navigate(`/projetos-arquitetonicos/${item.id}`)}
+            >
+              {item.video ? (
+                <video
+                  src={item.video}
+                  autoPlay
+                  loop
+                  muted
+                  className={`${
+                    item.vertical
+                      ? "h-[600px] w-[350px]"
+                      : "w-[350px] h-[250px]"
+                  }  object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
+                />
+              ) : (
+                <>
+                  <img
+                    src={item.image && item.image[0]}
+                    alt="Imagem 2"
+                    className="w-100 rounded-sm"
+                  />
+                </>
+              )}
               <div className="p-2">
                 <h3 className="text-xl">{item.title}</h3>
                 <p className="text-xs mt-3">{item.location}</p>

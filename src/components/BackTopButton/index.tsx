@@ -7,7 +7,6 @@ export const BackTopButton = () => {
   // Mostra o botão ao rolar a página para baixo
   useEffect(() => {
     const toggleVisibility = () => {
-      console.log(window.scrollY);
       if (window.scrollY > 300) {
         setIsVisible(true);
       } else {

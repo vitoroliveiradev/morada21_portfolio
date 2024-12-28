@@ -1,6 +1,7 @@
 import { AboutCompany } from "../components/AboutCompany";
 import { AboutTeam } from "../components/AboutTeam";
 import { ArchitecturalProjects } from "../pages/ArchitecturalProjects";
+import { ArchitecturalPage } from "../pages/ArchitecturalProjects/ArchitecturalPage";
 import { ComercialProjects } from "../pages/ComercialProjects";
 import { Contact } from "../pages/Contact";
 import { Home } from "../pages/Home";
@@ -39,5 +40,9 @@ export const routes = [
     {
       path: "/projetos/:id",
       element: <ProjectPage />,
+    },
+    {
+      path: "/projetos-arquitetonicos/:id",
+      element: <ArchitecturalPage />,
     },
   ];

@@ -3,9 +3,29 @@ import { Slider } from "../../components/Slider";
 import { Container } from "../../components/Container";
 import { useNavigate } from "react-router-dom";
 import { cards } from "../../utils/cards";
+import { getFiles } from "../../hooks/uploadImage";
+import { useEffect, useState } from "react";
+
+type ImagesProp = {
+  name: string;
+  url: string;
+};
 
 export const Home = () => {
   const navigate = useNavigate();
+  const [images, setImages] = useState<ImagesProp[]>([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      const data: ImagesProp[] = await getFiles("casa021");
+      if (data) {
+        setImages(data);
+      }
+    };
+
+    getData();
+  }, []);
+
   return (
     <>
       <Slider />
@@ -32,7 +52,7 @@ export const Home = () => {
                   />
                 ) : (
                   <img
-                    src={card.image}
+                    src={card.image[0]}
                     alt={card.title}
                     className={`${
                       card.vertical

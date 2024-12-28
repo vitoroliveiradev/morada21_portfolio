@@ -1,28 +1,28 @@
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { cards } from "../../utils/cards";
 import { CardTitle } from "../../components/ui/card";
+import { useEffect } from "react";
 
 export const ProjectPage = () => {
+  const { pathname } = useLocation();
   const { id } = useParams();
   const card = cards.filter((item) => item.id === Number(id))[0];
-  console.log(card);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="px-[120px]">
-      <div>
-        <img src={card.image} alt="" className="rounded-md" />
-      </div>
       <div className="flex flex-col gap-4 my-16">
         <CardTitle className="text-5xl">{card.title}</CardTitle>
         <p className="text-xl text-primaryOrange">{card.location}</p>
       </div>
       <div className="flex gap-8">
         <div className="flex flex-col gap-8">
-          <img src={card.image} alt="" className="rounded-md" />
-          <img src={card.image} alt="" />
-          <img src={card.image} alt="" />
-          <img src={card.image} alt="" />
-          <img src={card.image} alt="" />
+          {card.image.map((img) => (
+            <img src={img} alt="" className="rounded-md" />
+          ))}
         </div>
         <div className="flex flex-col gap-8">
           <div>
@@ -37,7 +37,7 @@ export const ProjectPage = () => {
           </p>
           <p>
             <strong>Área: </strong>
-            7.000m²
+            {card.area}
           </p>
           <p>
             <strong>Equipe: </strong> Ana Silveira, Thaís Galvão, Talita Brito
