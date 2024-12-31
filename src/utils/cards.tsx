@@ -3,17 +3,27 @@ import image1 from "../assets/ArchitecturalProjects/RENDER POSTAGEM 4.jpg";
 import image2 from "../assets/ArchitecturalProjects/RENDER POSTAGEM 5.jpg";
 import image3 from "../assets/ArchitecturalProjects/render total.jpg";
 
-import casa02101 from "../assets/ArchitecturalProjects/CASA 021/01.jpg"
-import casa02102 from "../assets/ArchitecturalProjects/CASA 021/01.jpg"
-import casa02103 from "../assets/ArchitecturalProjects/CASA 021/01.jpg"
-import casa02104 from "../assets/ArchitecturalProjects/CASA 021/01.jpg"
-import casa02105 from "../assets/ArchitecturalProjects/CASA 021/01.jpg"
-import casa02106 from "../assets/ArchitecturalProjects/CASA 021/01.jpg"
-import casa02107 from "../assets/ArchitecturalProjects/CASA 021/01.jpg"
-import casa02108 from "../assets/ArchitecturalProjects/CASA 021/01.jpg"
-import casa02109 from "../assets/ArchitecturalProjects/CASA 021/01.jpg"
+import casa02101 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
+import casa02102 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
+import casa02103 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
+import casa02104 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
+import casa02105 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
+import casa02106 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
+import casa02107 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
+import casa02108 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
+import casa02109 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
 
-export const cards = [
+type CardsProps = {
+  id: number;
+  image: string[];
+  title: string;
+  location: string;
+  vertical: boolean;
+  video?: string;
+  area?: string;
+};
+
+export const cards: CardsProps[] = [
   {
     id: 1,
     image: [image1],

@@ -30,7 +30,7 @@ export const InteriorDesigns = () => {
                 />
               ) : (
                 <img
-                  src={card.image}
+                  src={card.image[0]}
                   alt={card.title}
                   className={`${
                     card.vertical
