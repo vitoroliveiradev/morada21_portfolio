@@ -1,5 +1,4 @@
-import { Menu } from "../Menu";
-import { Logo } from "../ui/components/Logo";
+import MenuComponent from "./menu";
 
 type HeaderProps = {
   isFooter?: boolean;
@@ -10,11 +9,10 @@ export const Header = ({ isFooter }: HeaderProps) => {
     <header
       className={`p-3 ${
         !isFooter ? "bg-primaryGreen z-50 w-full" : "bg-primaryGreen"
-      } px-[70px] `}
+      } px-[70px] max-sm:p-0 `}
     >
-      <nav className="flex justify-between items-center ">
-        <Logo />
-        <Menu />
+      <nav className="flex justify-between items-center">
+        <MenuComponent />
       </nav>
     </header>
   );

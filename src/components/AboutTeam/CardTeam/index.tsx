@@ -14,7 +14,7 @@ export type CardTeam = {
 
 export const CardTeam = ({ image, position, name, description }: CardTeam) => {
   return (
-    <div className="flex flex-col items-center gap-8 max-w-[40%] h-fit p-2 shadow-lg">
+    <div className="flex flex-col items-center gap-8  h-fit p-2 shadow-lg">
       <img
         src={image}
         alt=""

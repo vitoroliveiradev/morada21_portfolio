@@ -23,7 +23,7 @@ export const FormContact = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-8 ">
       <h2 className="text-[40px]">Formulário de contato</h2>
       <Input
         required
@@ -62,13 +62,15 @@ export const FormContact = () => {
           })
         }
       />
-      <Button
-        variant="none"
-        className="bg-primaryOrange w-[200px] text-white hover:brightness-95"
-        type="submit"
-      >
-        Enviar
-      </Button>
+      <div className="max-md:flex max-md:items-center max-md:justify-center">
+        <Button
+          variant="none"
+          className="bg-primaryOrange w-[200px] text-white hover:brightness-95"
+          type="submit"
+        >
+          Enviar
+        </Button>
+      </div>
     </form>
   );
 };

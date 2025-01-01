@@ -12,7 +12,7 @@ export const Home = () => {
       <Slider />
       <Container>
         <section className="mt-12">
-          <div className="flex items-center flex-wrap">
+          <div className="flex items-center flex-wrap max-md:justify-center">
             {cards.map((card, index) => (
               <div
                 key={index}
@@ -27,8 +27,8 @@ export const Home = () => {
                     muted
                     className={`${
                       card.vertical
-                        ? "h-[600px] w-[350px]"
-                        : "w-[350px] h-[250px]"
+                        ? "h-[600px] w-[350px] max-md:w-[600px]"
+                        : "w-[350px] h-[250px] max-md:w-[600px]"
                     }  object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
                   />
                 ) : (
@@ -37,8 +37,8 @@ export const Home = () => {
                     alt={card.title}
                     className={`${
                       card.vertical
-                        ? "h-[600px] w-[350px]"
-                        : "w-[350px] h-[400px]"
+                        ? "h-[600px] w-[350px] max-md:w-[600px]"
+                        : "w-[350px] h-[400px] max-md:w-[600px]"
                     }  object-cover cursor-pointer rounded-sm hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
                   />
                 )}

@@ -34,7 +34,7 @@ export const Architecturalcards = [
   },
   {
     id: 17,
-    title: "Casa 028",
+    title: "Casa 088",
     location: "Indaiatuba, SP",
     year: "2024",
     area: "500 m²",

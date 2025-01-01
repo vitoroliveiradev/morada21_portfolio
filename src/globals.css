@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Josefin Sans", serif;
+}
+
 @layer base {
   :root {
     --primary-green: #3c4838;
@@ -63,7 +67,7 @@
 }
 
 body {
-background-color: var(--primaryGray);
+  background-color: var(--primaryGray);
 }
 
 @layer base {

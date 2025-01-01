@@ -5,21 +5,21 @@ export const AboutCompany = () => {
     <div className="w-full p-8">
       <h1 className="text-[40px] mb-4">Nossa História</h1>
       <hr />
-      <p className="text-[30px] max-w-[80%] mt-4">
-        O Morada 21 surgiu de um propósito em comum: criação e reprodução de
-        arquitetura com essência, utilizando das técnicas da psicoarquitetura,
-        design biofílico e feng shui, a fim de proporcionar bem estar e
-        transformar o cotidiano e a vida das pessoas por meio dos espaços.
+      <p className="text-[25px] max-w-[80%] mt-4">
+        O Morada 21, fundado em 2023, é uma associação de arquitetas, liderada
+        pelas sócias fundadoras Thais Galvão, Ana Silveira, e Talita Brito,
+        todas formadas pela Universidade Paulista, localizada em Campinas.
       </p>
       <div className="mt-[64px] grid grid-cols-2 gap-4">
         <div className="w-[90%]">
-          <h3 className="text-[25px]">
-            O Morada 21, fundado em 2023, é uma associação de arquitetas,
-            liderada pelas sócias fundadoras Thais Galvão, Ana Silveira, e
-            Talita Brito, todas formadas pela Universidade Paulista, localizada
-            em Campinas.
+          <h3 className="text-[20px]">
+            O Morada 21 surgiu de um propósito em comum: criação e reprodução de
+            arquitetura com essência, utilizando das técnicas da
+            psicoarquitetura, design biofílico e feng shui, a fim de
+            proporcionar bem estar e transformar o cotidiano e a vida das
+            pessoas por meio dos espaços.
           </h3>
-          <p className="mt-2 text-[18px]">
+          <p className="mt-2 text-[15px]">
             Desenvolvemos novos projetos arquitetônicos e comerciais com
             aprovações em condomínios e prefeituras em Indaiatuba e Campinas/SP.
             Design de interiores com proposta contemporânea com foco no bem

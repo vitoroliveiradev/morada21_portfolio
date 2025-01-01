@@ -13,12 +13,12 @@ export const ProjectPage = () => {
   }, [pathname]);
 
   return (
-    <div className="px-[120px]">
-      <div className="flex flex-col gap-4 my-16">
+    <div className="px-[120px] max-md:px-10">
+      <div className="flex flex-col gap-4 my-16 max-md:my-8">
         <CardTitle className="text-5xl">{card.title}</CardTitle>
         <p className="text-xl text-primaryOrange">{card.location}</p>
       </div>
-      <div className="flex gap-8">
+      <div className="flex gap-8 max-md:flex-col-reverse">
         <div className="flex flex-col gap-8">
           {card.image.map((img) => (
             <img src={img} alt="" className="rounded-md" />

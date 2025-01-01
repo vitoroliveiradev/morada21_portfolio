@@ -7,10 +7,12 @@ export const ComercialProjects = () => {
 
   return (
     <Container>
-      <h1 className="text-[30px] my-4">Projetos Comerciais</h1>
+      <h1 className="text-[30px] my-4 max-md:text-center">
+        Projetos Comerciais
+      </h1>
       <hr />
-      <section className="mt-12">
-        <div className="flex items-center flex-wrap">
+      <section className="mt-12 max-md:mt-3">
+        <div className="flex items-center flex-wrap max-md:justify-center">
           {cards.map((card, index) => (
             <div
               key={index}
@@ -25,8 +27,8 @@ export const ComercialProjects = () => {
                   muted
                   className={`${
                     card.vertical
-                      ? "h-[600px] w-[350px]"
-                      : "w-[350px] h-[250px]"
+                      ? "h-[600px] w-[350px] max-md:w-[400px] max-md:h-[400px]"
+                      : "w-[350px] h-[250px] max-md:w-[400px] max-md:h-[400px]"
                   }  object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
                 />
               ) : (
@@ -35,8 +37,8 @@ export const ComercialProjects = () => {
                   alt={card.title}
                   className={`${
                     card.vertical
-                      ? "h-[600px] w-[350px]"
-                      : "w-[350px] h-[400px]"
+                      ? "h-[600px] w-[350px] max-md:w-[400px] max-md:h-[400px]"
+                      : "w-[350px] h-[400px] max-md:w-[400px] max-md:h-[400px]"
                   }  object-cover cursor-pointer rounded-sm hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
                 />
               )}

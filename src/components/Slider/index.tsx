@@ -34,7 +34,7 @@ export const Slider = () => {
         }),
       ]}
     >
-      <CarouselContent className="h-[80vh] border-none">
+      <CarouselContent className="h-[80vh] max-md:h-auto border-none">
         {cardsSlides.map((card, index) => (
           <CarouselItem key={index}>
             <Card>

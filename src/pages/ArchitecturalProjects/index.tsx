@@ -9,13 +9,13 @@ export const ArchitecturalProjects = () => {
     <Container>
       <div className="p-0 mt-5 mb-5">
         <div className="mb-6">
-          <h1 className="text-[30px]">Projetos Arquitetônicos</h1>
+          <h1 className="text-[30px] max-md:text-center">Projetos Arquitetônicos</h1>
           <hr />
         </div>
         <div className="flex gap-4 flex-wrap justify-center items-center">
           {Architecturalcards.map((item) => (
             <div
-              className="bg-white shadow-2xl h-[28 0px] w-[350px] rounded-sm"
+              className="bg-white shadow-2xl w-[350px] max-md:w-[80%] rounded-sm"
               onClick={() => navigate(`/projetos-arquitetonicos/${item.id}`)}
             >
               {item.video ? (
@@ -26,8 +26,8 @@ export const ArchitecturalProjects = () => {
                   muted
                   className={`${
                     item.vertical
-                      ? "h-[600px] w-[350px]"
-                      : "w-[350px] h-[250px]"
+                      ? "h-[350px] w-[350px] max-md:w-[400px] max-md:h-[400px]"
+                      : "w-[350px] h-[250px] max-md:w-[400px] max-md:h-[400px]"
                   }  object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
                 />
               ) : (
@@ -41,7 +41,7 @@ export const ArchitecturalProjects = () => {
               )}
               <div className="p-2">
                 <h3 className="text-xl">{item.title}</h3>
-                <p className="text-xs mt-3">{item.location}</p>
+                <p className="text-xs mt-3 text-primaryOrange">{item.location}</p>
               </div>
             </div>
           ))}
