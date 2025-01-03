@@ -3,6 +3,8 @@ import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 
+// import emailjs from "emailjs-com";
+
 type FormInputType = {
   name: string;
   email: string;

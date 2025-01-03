@@ -39,7 +39,7 @@ export const Footer = () => {
           <Instagram />
         </Link>
         <Link
-          to="https://web.whatsapp.com/send?phone=1999590-1020&text=Olá, tudo bem ?"
+          to="https://api.whatsapp.com/send/?phone=5519992044443&text&type=phone_number&app_absent=0"
           target="_blank"
           rel="noreferrer"
           className="rounded-full bg-[#e6e5e5] p-1 hover:scale-110 transition-all"

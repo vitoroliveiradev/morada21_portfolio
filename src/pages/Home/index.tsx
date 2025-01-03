@@ -33,7 +33,7 @@ export const Home = () => {
                   />
                 ) : (
                   <img
-                    src={card.image[0]}
+                    src={card.image && card.image[0]}
                     alt={card.title}
                     className={`${
                       card.vertical

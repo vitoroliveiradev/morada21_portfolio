@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { Container } from "../../components/Container";
-import { cards } from "../../utils/cards";
+import { ComercialProjectsCards } from "../../utils/comercialProjectsCards";
 
 export const ComercialProjects = () => {
   const navigate = useNavigate();
@@ -13,11 +13,11 @@ export const ComercialProjects = () => {
       <hr />
       <section className="mt-12 max-md:mt-3">
         <div className="flex items-center flex-wrap max-md:justify-center">
-          {cards.map((card, index) => (
+          {ComercialProjectsCards.map((card, index) => (
             <div
               key={index}
               className="mx-4 mt-4"
-              onClick={() => navigate(`/projetos/${card.id}`)}
+              onClick={() => navigate(`/projetos/comercial/${card.id}`)}
             >
               {card.video ? (
                 <video
@@ -33,7 +33,7 @@ export const ComercialProjects = () => {
                 />
               ) : (
                 <img
-                  src={card.image[0]}
+                  src={card.image && card.image[0]}
                   alt={card.title}
                   className={`${
                     card.vertical

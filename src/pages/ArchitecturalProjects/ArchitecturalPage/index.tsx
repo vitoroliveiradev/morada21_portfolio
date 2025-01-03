@@ -35,7 +35,7 @@ export const ArchitecturalPage = () => {
           </p>
           <p>
             <strong>Área: </strong>
-            500m²
+            {card.area}
           </p>
           <p>
             <strong>Equipe: </strong> Ana Silveira, Thaís Galvão, Talita Brito

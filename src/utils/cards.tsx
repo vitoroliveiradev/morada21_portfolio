@@ -1,139 +1,30 @@
-import video from "../assets/videos/video1.mp4";
-import image1 from "../assets/ArchitecturalProjects/RENDER POSTAGEM 4.jpg";
-import image2 from "../assets/ArchitecturalProjects/RENDER POSTAGEM 5.jpg";
-import image3 from "../assets/ArchitecturalProjects/render total.jpg";
+import casa088 from "../assets/ArchitecturalProjects/CASA 028/M21_CASA088.mp4";
 
 import casa02101 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
-import casa02102 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
-import casa02103 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
-import casa02104 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
-import casa02105 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
-import casa02106 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
-import casa02107 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
-import casa02108 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
-import casa02109 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
+import casa02102 from "../assets/ArchitecturalProjects/CASA 021/02.jpg";
+import casa02103 from "../assets/ArchitecturalProjects/CASA 021/03.jpg";
+import casa02104 from "../assets/ArchitecturalProjects/CASA 021/04.jpg";
+import casa02105 from "../assets/ArchitecturalProjects/CASA 021/05.jpg";
+import casa02106 from "../assets/ArchitecturalProjects/CASA 021/06.jpg";
+import casa02107 from "../assets/ArchitecturalProjects/CASA 021/07.jpg";
+import casa02108 from "../assets/ArchitecturalProjects/CASA 021/08.jpg";
+import casa02109 from "../assets/ArchitecturalProjects/CASA 021/09.jpg";
 
 type CardsProps = {
   id: number;
-  image: string[];
+  image?: string[];
   title: string;
   location: string;
   vertical: boolean;
   video?: string;
   area?: string;
+  year?: string;
+  description?: string;
 };
 
 export const cards: CardsProps[] = [
   {
     id: 1,
-    image: [image1],
-    title: "Casa Monte Mor",
-    location: "Recife, PE",
-    vertical: true,
-    video,
-  },
-  {
-    id: 2,
-    image: [image2],
-    title: "Casa Campinas",
-    location: "Recife, PE",
-    vertical: false,
-  },
-  {
-    id: 3,
-    image: [image1],
-    title: "Casa Vinhedo",
-    location: "Recife, PE",
-    vertical: false,
-  },
-  {
-    id: 4,
-    image: [image3],
-    title: "Casa Campos do Jordão",
-    location: "Recife, PE",
-    vertical: false,
-  },
-  {
-    id: 5,
-    image: [image2],
-    title: "Teatro Boas Artes",
-    location: "Recife, PE",
-    vertical: false,
-  },
-  {
-    id: 6,
-    image: [image1],
-    title: "Teatro São Paulo",
-    location: "Recife, PE",
-    vertical: true,
-    video,
-  },
-  {
-    id: 7,
-    image: [image2],
-    title: "Concerto Bela Guanabara",
-    location: "Recife, PE",
-    vertical: true,
-  },
-  {
-    id: 8,
-    image: [image3],
-    title: "Monumental de São Paulo",
-    location: "Recife, PE",
-    vertical: false,
-  },
-  {
-    id: 9,
-    image: [image1],
-    title: "Aparecida de Goiânia",
-    location: "Recife, PE",
-    vertical: false,
-  },
-  {
-    id: 10,
-    image: [image2],
-    title: "Pedreira de São Gonçalo",
-    location: "Recife, PE",
-    vertical: true,
-    video,
-  },
-  {
-    id: 11,
-    image: [image3],
-    title: "Monte de Vilas Boas",
-    location: "Recife, PE",
-    vertical: false,
-  },
-  {
-    id: 12,
-    image: [image1],
-    title: "Card 1",
-    location: "Recife, PE",
-    vertical: false,
-  },
-  {
-    id: 13,
-    image: [image2],
-    title: "Concerto de Piracicaba",
-    location: "Recife, PE",
-    vertical: false,
-  },
-  {
-    id: 14,
-    image: [image3],
-    title: "Cordilheiras de Manreza",
-    location: "Recife, PE",
-    vertical: false,
-  },
-  {
-    id: 15,
-    image: [image1, image2],
-    title: "Casa de Maringá",
-    location: "Recife, PE",
-    vertical: true,
-  },
-  {
-    id: 16,
     image: [
       casa02101,
       casa02102,
@@ -145,8 +36,23 @@ export const cards: CardsProps[] = [
       casa02108,
       casa02109,
     ],
-    title: "Casa de Maringá",
-    location: "Recife, PE",
+    title: "Casa 021",
+    location: "Indaiatuba, SP",
+    year: "2024",
+    area: "500 m²",
+    description:
+      "Residência unifamiliar localizada em Indaiatuba, interior de São Paulo, projetada em um terreno em aclive que resultou em uma fachada linear, rica em elementos modernistas, e materiais naturais nobres, contemplada com aberturas generosas para a área externa, para recebimento do melhor da ventilação e iluminação naturais.",
+    vertical: false,
+  },
+  {
+    id: 2,
+    video: casa088,
+    title: "Casa 088",
+    location: "Indaiatuba, SP",
+    year: "2024",
+    area: "500 m²",
+    description:
+      "Residência unifamiliar localizada em Indaiatuba, interior de São Paulo, projetada em um terreno em aclive que resultou em uma fachada linear, rica em elementos modernistas, e materiais naturais nobres, contemplada com aberturas generosas para a área externa, para recebimento do melhor da ventilação e iluminação naturais.",
     vertical: true,
   },
 ];

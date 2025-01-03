@@ -1,5 +1,5 @@
 import { Container } from "../../components/Container";
-import { cards } from "../../utils/cards";
+import { InteriorDesignCards } from "../../utils/interiorDesignCards";
 import { useNavigate } from "react-router-dom";
 
 export const InteriorDesigns = () => {
@@ -12,11 +12,11 @@ export const InteriorDesigns = () => {
       <hr />
       <section className="mt-12 max-md:mt-3">
         <div className="flex items-center flex-wrap max-md:justify-center">
-          {cards.map((card, index) => (
+          {InteriorDesignCards.map((card, index) => (
             <div
               key={index}
               className="mx-4 mt-4"
-              onClick={() => navigate(`/projetos/${card.id}`)}
+              onClick={() => navigate(`/projetos/designInteriores/${card.id}`)}
             >
               {card.video ? (
                 <video
@@ -32,11 +32,11 @@ export const InteriorDesigns = () => {
                 />
               ) : (
                 <img
-                  src={card.image[0]}
+                  src={card.image && card.image[0]}
                   alt={card.title}
                   className={`${
                     card.vertical
-                      ? "h-[600px] w-[350px] max-md:w-[400px] max-md:h-[400px]"
+                      ? "h-[300px] w-[350px] max-md:w-[400px] max-md:h-[400px]"
                       : "w-[350px] h-[400px] max-md:w-[400px] max-md:h-[400px]"
                   }  object-cover cursor-pointer rounded-sm hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
                 />

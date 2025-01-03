@@ -1,12 +1,12 @@
 import { useLocation, useParams } from "react-router-dom";
-import { cards } from "../../utils/cards";
+import { InteriorDesignCards } from "../../utils/interiorDesignCards";
 import { CardTitle } from "../../components/ui/card";
 import { useEffect } from "react";
 
-export const ProjectPage = () => {
+export const InteriorDesignPage = () => {
   const { pathname } = useLocation();
   const { id } = useParams();
-  const card = cards.filter((item) => item.id === Number(id))[0];
+  const card = InteriorDesignCards.filter((item) => item.id === Number(id))[0];
 
   console.log("card", card);
 
@@ -30,14 +30,18 @@ export const ProjectPage = () => {
               muted
               className={`${
                 card.vertical
-                  ? "h-[400px] w-[750px] max-md:w-[600px]"
+                  ? "h-[400px] w-[550px] max-md:w-[600px]"
                   : "w-[350px] h-[250px] max-md:w-[600px]"
               }  object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
             />
           ) : (
             card.image &&
             card.image.map((img) => (
-              <img src={img} alt="" className="rounded-md" />
+              <img
+                src={img}
+                alt=""
+                className="rounded-md h-[400px] w-[600px] object-cover "
+              />
             ))
           )}
         </div>
