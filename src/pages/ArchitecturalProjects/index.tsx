@@ -14,7 +14,7 @@ export const ArchitecturalProjects = () => {
           </h1>
           <hr />
         </div>
-        <div className="flex gap-4 flex-wrap justify-center items-center">
+        <div className="flex gap-4 flex-wrap items-center">
           {Architecturalcards.map((item) => (
             <div
               className="bg-white shadow-2xl w-[350px] max-md:w-[80%] rounded-sm"

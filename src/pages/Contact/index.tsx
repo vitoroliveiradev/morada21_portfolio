@@ -1,6 +1,6 @@
 import { FormContact } from "../../components/FormContact";
 
-import image from "../../assets/interiorDesigns/02.png";
+import image from "../../assets/interiorDesigns/casa021/02.png";
 import { Container } from "../../components/Container";
 
 export const Contact = () => {

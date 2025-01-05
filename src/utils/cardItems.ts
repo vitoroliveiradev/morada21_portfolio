@@ -1,7 +1,11 @@
+import AnaImage from "../assets/team/ana.jpeg";
+import ThaisImage from "../assets/team/thais.jpeg";
+import TalitaImage from "../assets/team/talita.jpeg";
+
 export const cardItems = [
   {
     id: 1,
-    image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+    image: AnaImage,
     position: "Arquiteta",
     name: "Ana Silveira",
     description: `Iniciou sua caminhada na Engenharia, mas alterou sua rota para a Arquitetura e Urbanismo,
@@ -13,7 +17,7 @@ export const cardItems = [
   },
   {
     id: 2,
-    image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+    image: ThaisImage,
     position: "Arquiteta",
     name: "Thaís Galvão",
     description: `Desenhar e fazer pinturas em aquarela e telas sempre estiveram entre suas habilidades.
@@ -26,7 +30,7 @@ export const cardItems = [
   },
   {
     id: 3,
-    image: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+    image: TalitaImage,
     position: "Arquiteta",
     name: "Talita Brito",
     description: `Iniciou sua jornada no design de interiores, quando percebeu que a arquitetura era a junção

@@ -8,8 +8,6 @@ export const InteriorDesignPage = () => {
   const { id } = useParams();
   const card = InteriorDesignCards.filter((item) => item.id === Number(id))[0];
 
-  console.log("card", card);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);

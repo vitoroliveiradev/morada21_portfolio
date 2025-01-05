@@ -15,10 +15,24 @@ export const ArchitecturalPage = () => {
       <div className="flex gap-8 max-md:flex-col-reverse">
         <div className="flex flex-col gap-8">
           {card.video ? (
-            <video src={card.video} autoPlay loop muted />
+            <video
+              src={card.video}
+              autoPlay
+              loop
+              muted
+              className={`${
+                card.vertical
+                  ? "h-[400px] w-[1000px] max-md:w-[600px]"
+                  : "w-[350px] h-[250px] max-md:w-[600px]"
+              } w-[1400px] object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
+            />
           ) : (
             card.image?.map((img) => (
-              <img src={img} alt="" className="rounded-md" />
+              <img
+                src={img}
+                alt=""
+                className="w-[1400px] rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out"
+              />
             ))
           )}
         </div>

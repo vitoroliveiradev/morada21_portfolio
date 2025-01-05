@@ -8,25 +8,25 @@ export const Footer = () => {
     <footer className="mt-8 bg-primaryGreen h-auto text-[#cfcfcf] pt-8 relative">
       <div className="px-[90px] flex flex-col gap-10 ">
         <div>
-          <h2>Morada 21 Ltda</h2>
-          <span>CAU PJ2030-0</span>
+          <h2 className="text-lg">Morada 21 Ltda</h2>
         </div>
-        <h2>Responsáveis Técnicos</h2>
+        <h2 className="text-lg">Responsáveis Técnicos</h2>
         <div className="flex gap-8">
           <div>
-            <p>Lorem Ipsum</p>
-            <span>arquiteto e urbanista</span>
-            <span>CAU - A32302-4</span>
+            <p className="text-md">Ana Silveira</p>
+            <span className="text-sm">ARQUITETA E URBANISTA</span>
           </div>
           <div>
-            <p>Lorem Ipsum</p>
-            <span>arquiteto e urbanista</span>
-            <span>CAU - A32302-4</span>
+            <p className="text-md">Thais Galvão</p>
+            <span className="text-sm">ARQUITETA E URBANISTA</span>
+          </div>
+          <div>
+            <p className="text-md">Talita Brito</p>
+            <span className="text-sm">ARQUITETA E URBANISTA</span>
           </div>
         </div>
         <div>
-          Tel: +55 (11) 939312716 | morada21@morada21.com Rua Teste 1421 CEP
-          03201-000 Indaiatuba, SP Brasil
+          Tel: +55 (19) 9 9204-4443 | morada21@morada21.com Indaiatuba, SP.
         </div>
       </div>
       <div className="px-[90px] mt-12 flex gap-4">

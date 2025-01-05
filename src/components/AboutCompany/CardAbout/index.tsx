@@ -1,16 +1,13 @@
-import image from "../../../assets/ArchitecturalProjects/RENDER POSTAGEM 4.jpg";
+import TeamImage from "../../../assets/team/team-image.jpeg";
 
 export const CardAbout = () => {
   return (
-    <div className="my-8">
-      <img src={image} alt="imagem" className="rounded-md" />
-      <p className="mt-2 font-semibold">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-        ducimus assumenda exercitationem nobis ea cum laudantium, iure ipsam
-        recusandae voluptatem repellendus aliquam nisi quis at temporibus,
-        numquam quo aperiam porro. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit.
-      </p>
+    <div>
+      <img
+        src={TeamImage}
+        alt="imagem"
+        className="rounded-md max-h-[300px] w-[500px] object-cover"
+      />
     </div>
   );
 };

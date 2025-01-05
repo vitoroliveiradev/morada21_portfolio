@@ -10,8 +10,6 @@ export const ComercialProjectsPage = () => {
     (item) => item.id === Number(id)
   )[0];
 
-  console.log("card", card);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -24,7 +22,7 @@ export const ComercialProjectsPage = () => {
       </div>
       <div className="flex gap-8 max-md:flex-col-reverse">
         <div className="flex flex-col gap-8">
-          {card.video ? (
+          {card.video && (
             <video
               src={card.video}
               autoPlay
@@ -32,19 +30,17 @@ export const ComercialProjectsPage = () => {
               muted
               className={`${
                 card.vertical
-                  ? "h-[400px] w-[550px] max-md:w-[600px]"
+                  ? "h-[400px] w-[1000px] max-md:w-[600px]"
                   : "w-[350px] h-[250px] max-md:w-[600px]"
-              }  object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
+              } w-[1400px] object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
             />
-          ) : (
-            card.image &&
-            card.image.map((img) => (
-              <img
-                src={img}
-                alt=""
-                className="rounded-md h-[400px] w-[600px] object-cover "
-              />
-            ))
+          )}
+          {card.image && (
+            <img
+              src={card.image[0]}
+              alt=""
+              className="rounded-md h-[400px] w-[1200px] object-cover "
+            />
           )}
         </div>
         <div className="flex flex-col gap-8">
@@ -72,6 +68,16 @@ export const ComercialProjectsPage = () => {
             <p>{card.description}</p>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center flex-wrap gap-3 mt-6 max-md:flex-col">
+        {card.image &&
+          card.image.map((img) => (
+            <img
+              src={img}
+              alt=""
+              className="rounded-md h-[400px] w-[30%] max-md:w-[100%] object-cover "
+            />
+          ))}
       </div>
     </div>
   );
