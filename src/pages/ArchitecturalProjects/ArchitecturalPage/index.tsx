@@ -13,7 +13,7 @@ export const ArchitecturalPage = () => {
         <p className="text-xl text-primaryOrange">{card.location}</p>
       </div>
       <div className="flex gap-8 max-md:flex-col-reverse">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 w-[30%]">
           {card.video ? (
             <video
               src={card.video}
@@ -22,21 +22,21 @@ export const ArchitecturalPage = () => {
               muted
               className={`${
                 card.vertical
-                  ? "h-[400px] w-[1000px] max-md:w-[600px]"
-                  : "w-[350px] h-[250px] max-md:w-[600px]"
-              } w-[1400px] object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
+                  ? "h-[400px] w-[750px] max-md:w-[600px]"
+                  : "w-[600px] h-[250px] max-md:w-[600px]"
+              } object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
             />
           ) : (
-            card.image?.map((img) => (
+            card.image && (
               <img
-                src={img}
+                src={card.image[0]}
                 alt=""
-                className="w-[1400px] rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out"
+                className="rounded-md h-[400px] w-[1000px] object-cover"
               />
-            ))
+            )
           )}
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 w-[70%]">
           <div>
             <h2 className="font-bold text-xl text-primaryGreen pb-4">
               Sobre o projeto
@@ -51,6 +51,12 @@ export const ArchitecturalPage = () => {
             <strong>Área: </strong>
             {card.area}
           </p>
+          {card.landArea && (
+            <p>
+              <strong>Área de Construção: </strong>
+              {card.landArea}
+            </p>
+          )}
           <p>
             <strong>Equipe: </strong> Ana Silveira, Thaís Galvão, Talita Brito
           </p>
@@ -59,6 +65,16 @@ export const ArchitecturalPage = () => {
             <p>{card.description}</p>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center flex-wrap gap-3 mt-6 max-md:flex-col">
+        {card.image &&
+          card.image.map((img) => (
+            <img
+              src={img}
+              alt=""
+              className="rounded-md h-[400px] w-[30%] max-md:w-[100%] object-cover "
+            />
+          ))}
       </div>
     </div>
   );

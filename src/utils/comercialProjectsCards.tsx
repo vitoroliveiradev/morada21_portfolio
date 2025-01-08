@@ -28,6 +28,7 @@ type ComercialProjectsCardsProps = {
   vertical: boolean;
   video?: string;
   area?: string;
+  landArea?: string;
   year?: string;
   description?: string;
 };
@@ -35,8 +36,9 @@ type ComercialProjectsCardsProps = {
 export const ComercialProjectsCards: ComercialProjectsCardsProps[] = [
   {
     id: 1,
-    title: "Aquidabã Mall",
+    title: "Aquidaban Mall",
     location: "Campinas, SP",
+    landArea: "2.500 m²",
     image: [
       aquidaban01,
       aquidaban02,
@@ -51,12 +53,12 @@ export const ComercialProjectsCards: ComercialProjectsCardsProps[] = [
     ],
     year: "2024",
     description:
-      "O Aquidabã Mall é um moderno complexo comercial localizado em Campinas, SP. O projeto conta com uma variedade de espaços comerciais, opções de alimentação e instalações de entretenimento, projetados para proporcionar uma experiência de compras completa. A arquitetura do shopping enfatiza espaços abertos e luz natural, criando uma atmosfera convidativa para os visitantes. Previsto para ser concluído em 2024, o Aquidabã Mall pretende se tornar um ponto central para a comunidade local, oferecendo uma combinação de conveniência e lazer.",
+      "Este projeto contribui para a revitalização de uma área urbana obsoleta. A construção deste Mall irá garantir maior movimentação e presença de pessoas na área, promovendo imediatamente segurança e mudança de atmosfera da área. Com a oferta de comércios e serviços, este espaço trará facilidade para os que frequentam esta área central de Campinas, além de conter espaços para o pedestre, como mobiliário urbano e espaços de permanência de qualidade.",
     vertical: true,
   },
   {
     id: 2,
-    title: "Nambi",
+    title: "Vila Nambi",
     location: "Jundiai, SP",
     image: [
       nambi01,
@@ -70,9 +72,10 @@ export const ComercialProjectsCards: ComercialProjectsCardsProps[] = [
       nambi09,
       nambi10,
     ],
+    landArea: "1.057,00 m²",
     year: "2024",
     description:
-      "O Nambi é um empreendimento residencial localizado em Jundiaí, SP. O projeto foi concebido para oferecer uma experiência de vida moderna e confortável, com uma variedade de opções de lazer e espaços verdes. O condomínio conta com apartamentos de diferentes tamanhos e configurações, atendendo às necessidades de diversos perfis de moradores. A arquitetura do Nambi é marcada por linhas limpas e materiais naturais, criando uma atmosfera acolhedora e contemporânea. Com previsão de entrega para 2024, o Nambi promete ser um refúgio urbano para seus futuros moradores.",
+      "Empreendimento comercial, com estacionamento próprio, localizado na cidade de Jundiaí; o projeto oferece espaços como mini mercado, farmácia e pet shop, além de muitas outras lojas que podem ser alugadas para comércios e serviços para atender aos moradores e frequentadores da Vila Nambi.",
     vertical: true,
   },
 ];

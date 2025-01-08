@@ -52,6 +52,7 @@ type InteriorDesignCardsProps = {
   vertical: boolean;
   video?: string;
   area?: string;
+  landArea?: string;
   year?: string;
   description?: string;
 };
@@ -74,11 +75,11 @@ export const InteriorDesignCards: InteriorDesignCardsProps[] = [
       bareli12,
     ],
     title: "Casa Bareli",
-    location: "Indaiatuba, SP",
+    location: "Campinas, SP",
     year: "2024",
-    area: "15 m²",
+    landArea: "54,00 m²",
     description:
-      "Local amplo com cores claras e diferentes texturas de materiais. O projeto foi pensado para ser um ambiente de trabalho agradável e confortável.",
+      "O desafio deste projeto foi conciliar todas as necessidades da cliente, de forma a integrar os ambientes do térreo de forma harmônica (salas de estar, jantar e cozinha), e que proporcionasse interação aos usuários quando estivessem todos reunidos.",
     vertical: true,
   },
   {
@@ -97,9 +98,10 @@ export const InteriorDesignCards: InteriorDesignCardsProps[] = [
     title: "Casa 021",
     location: "Indaiatuba, SP",
     year: "2024",
-    area: "15 m²",
+    area: "990 m²",
+    landArea: "421,74 m²",
     description:
-      "Local amplo com cores claras e diferentes texturas de materiais. O projeto foi pensado para ser um ambiente de trabalho agradável e confortável.",
+      " Design de interiores sofisticado, que conversa com os elementos externos da residência, trazendo a mesma linguagem do externo para o interno, preservando a elegância e a sofisticação como um todo.",
     vertical: true,
   },
   {
@@ -116,12 +118,12 @@ export const InteriorDesignCards: InteriorDesignCardsProps[] = [
       guimaraes09,
       guimaraes10,
     ],
-    title: "Casa Guimarães",
+    title: "Apartamento Guimarães",
     location: "Indaiatuba, SP",
     year: "2024",
-    area: "15 m²",
+    landArea: "43,16 m²",
     description:
-      "Local amplo com cores claras e diferentes texturas de materiais. O projeto foi pensado para ser um ambiente de trabalho agradável e confortável.",
+      "O foco da criação deste projeto foi a praticidade que o cliente necessitava em seu dia-a-dia; superfícies de fácil limpeza, espaços de armazenamento e possibilidade de automação dos equipamentos comoaspirador robô, alexa e projetores foram as exigências que nos preocupamos em cumprir para atender ao morador deste apartamento.",
     vertical: true,
   },
   {
@@ -144,7 +146,7 @@ export const InteriorDesignCards: InteriorDesignCardsProps[] = [
     year: "2024",
     area: "15 m²",
     description:
-      "Local amplo com cores claras e diferentes texturas de materiais. O projeto foi pensado para ser um ambiente de trabalho agradável e confortável.",
+      "Este projeto de reforma consistiu em ampliar os espaços de armazenamento para melhor atender os moradores desta residência; o espaço abaixo da escada foi o maior protagonista desta ampliação, pois, anteriormente, encontrava-se vazio, e agora, oferecerá amplo espaço de armazenamento para despensa, louças (cristaleira), e também um espaço de bar, para as bebidas, e adega climatizada.",
     vertical: true,
   },
 ];

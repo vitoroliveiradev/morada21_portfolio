@@ -1,6 +1,5 @@
 import { Instagram } from "lucide-react";
 import WhatsApp from "../../assets/icons/whatsapp.png";
-import TikTok from "../../assets/icons/tik-tok.png";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -12,17 +11,20 @@ export const Footer = () => {
         </div>
         <h2 className="text-lg">Responsáveis Técnicos</h2>
         <div className="flex gap-8">
-          <div>
+          <div className="flex flex-col">
             <p className="text-md">Ana Silveira</p>
             <span className="text-sm">ARQUITETA E URBANISTA</span>
+            <span className="text-sm">CAU:</span>
           </div>
-          <div>
+          <div className="flex flex-col">
             <p className="text-md">Thais Galvão</p>
             <span className="text-sm">ARQUITETA E URBANISTA</span>
+            <span className="text-sm">CAU: A295970-4</span>
           </div>
-          <div>
+          <div className="flex flex-col">
             <p className="text-md">Talita Brito</p>
             <span className="text-sm">ARQUITETA E URBANISTA</span>
+            <span className="text-sm">CAU: A284891-0</span>
           </div>
         </div>
         <div>
@@ -47,18 +49,6 @@ export const Footer = () => {
           <img
             src={WhatsApp}
             alt="WhatsApp"
-            className="w-[25px] h-[25px] rounded-full"
-          />
-        </Link>
-        <Link
-          to="https://www.tiktok.com/@morada21.arq"
-          target="_blank"
-          rel="noreferrer"
-          className="rounded-full bg-[#e6e5e5] p-1 hover:scale-110 transition-all"
-        >
-          <img
-            src={TikTok}
-            alt="TikTok"
             className="w-[25px] h-[25px] rounded-full"
           />
         </Link>

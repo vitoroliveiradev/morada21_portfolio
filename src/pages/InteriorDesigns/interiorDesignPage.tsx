@@ -19,7 +19,7 @@ export const InteriorDesignPage = () => {
         <p className="text-xl text-primaryOrange">{card.location}</p>
       </div>
       <div className="flex gap-8 max-md:flex-col-reverse">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 w-[30%]">
           {card.video ? (
             <video
               src={card.video}
@@ -28,22 +28,21 @@ export const InteriorDesignPage = () => {
               muted
               className={`${
                 card.vertical
-                  ? "h-[400px] w-[550px] max-md:w-[600px]"
-                  : "w-[350px] h-[250px] max-md:w-[600px]"
-              }  object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
+                  ? "h-[400px] w-[750px] max-md:w-[600px]"
+                  : "w-[600px] h-[250px] max-md:w-[600px]"
+              } object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
             />
           ) : (
-            card.image &&
-            card.image.map((img) => (
+            card.image && (
               <img
-                src={img}
+                src={card.image[0]}
                 alt=""
-                className="rounded-md h-[400px] w-[600px] object-cover "
+                className="rounded-md h-[400px] w-[600px] object-cover"
               />
-            ))
+            )
           )}
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 w-[70%]">
           <div>
             <h2 className="font-bold text-xl text-primaryGreen pb-4">
               Sobre o projeto
@@ -58,6 +57,12 @@ export const InteriorDesignPage = () => {
             <strong>Área: </strong>
             {card.area}
           </p>
+          {card.landArea && (
+            <p>
+              <strong>Área de Construção: </strong>
+              {card.landArea}
+            </p>
+          )}
           <p>
             <strong>Equipe: </strong> Ana Silveira, Thaís Galvão, Talita Brito
           </p>
@@ -66,6 +71,16 @@ export const InteriorDesignPage = () => {
             <p>{card.description}</p>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center flex-wrap gap-3 mt-6 max-md:flex-col">
+        {card.image &&
+          card.image.map((img) => (
+            <img
+              src={img}
+              alt=""
+              className="rounded-md h-[400px] w-[30%] max-md:w-[100%] object-cover "
+            />
+          ))}
       </div>
     </div>
   );

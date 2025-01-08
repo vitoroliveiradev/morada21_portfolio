@@ -27,7 +27,8 @@ export const Architecturalcards = [
     title: "Casa 021",
     location: "Indaiatuba, SP",
     year: "2024",
-    area: "500 m²",
+    area: "990 m²",
+    landArea: "421,74 m²",
     description:
       "Residência unifamiliar localizada em Indaiatuba, interior de São Paulo, projetada em um terreno em aclive que resultou em uma fachada linear, rica em elementos modernistas, e materiais naturais nobres, contemplada com aberturas generosas para a área externa, para recebimento do melhor da ventilação e iluminação naturais.",
     vertical: true,
@@ -37,9 +38,10 @@ export const Architecturalcards = [
     title: "Casa 088",
     location: "Indaiatuba, SP",
     year: "2024",
-    area: "500 m²",
+    area: "1.050 m²",
+    landArea: "500 m²",
     description:
-      "Residência unifamiliar localizada em Indaiatuba, interior de São Paulo, projetada em um terreno em aclive que resultou em uma fachada linear, rica em elementos modernistas, e materiais naturais nobres, contemplada com aberturas generosas para a área externa, para recebimento do melhor da ventilação e iluminação naturais.",
+      "A casa 088 explora uma nova perspectiva, através da cobertura inclinada, e, valorização da privacidade sem abrir mão da iluminação e ventilação naturais.",
     vertical: true,
     video: casa02891,
   },

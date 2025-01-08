@@ -13,15 +13,15 @@ import bareli10 from "../assets/interiorDesigns/bareli/10.jpg";
 import bareli11 from "../assets/interiorDesigns/bareli/11.jpg";
 import bareli12 from "../assets/interiorDesigns/bareli/12.jpg";
 
-import casa02101 from "../assets/interiorDesigns/casa021/01.png";
-import casa02102 from "../assets/interiorDesigns/casa021/02.png";
-import casa02103 from "../assets/interiorDesigns/casa021/03.png";
-import casa02104 from "../assets/interiorDesigns/casa021/04.png";
-import casa02107 from "../assets/interiorDesigns/casa021/07.png";
-import casa02108 from "../assets/interiorDesigns/casa021/08.png";
-import casa02109 from "../assets/interiorDesigns/casa021/09.png";
-import casa02110 from "../assets/interiorDesigns/casa021/10.png";
-import casa02111 from "../assets/interiorDesigns/casa021/11.png";
+import casa02101 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
+import casa02102 from "../assets/ArchitecturalProjects/CASA 021/02.jpg";
+import casa02103 from "../assets/ArchitecturalProjects/CASA 021/03.jpg";
+import casa02104 from "../assets/ArchitecturalProjects/CASA 021/04.jpg";
+import casa02105 from "../assets/ArchitecturalProjects/CASA 021/05.jpg";
+import casa02106 from "../assets/ArchitecturalProjects/CASA 021/06.jpg";
+import casa02107 from "../assets/ArchitecturalProjects/CASA 021/07.jpg";
+import casa02108 from "../assets/ArchitecturalProjects/CASA 021/08.jpg";
+import casa02109 from "../assets/ArchitecturalProjects/CASA 021/09.jpg";
 
 import guimaraes01 from "../assets/interiorDesigns/guimaraes/01.jpg";
 import guimaraes02 from "../assets/interiorDesigns/guimaraes/02.jpg";
@@ -62,12 +62,14 @@ export const cards: CardsProps[] = [
   {
     id: 1,
     image: [
+      casa02108 ,
       casa02101,
       casa02102,
       casa02103,
       casa02104,
+      casa02105,
+      casa02106,
       casa02107,
-      casa02108,
       casa02109,
     ],
     title: "Casa 021",
@@ -116,15 +118,13 @@ export const cards: CardsProps[] = [
   {
     id: 4,
     image: [
+      casa02108,
       casa02101,
       casa02102,
       casa02103,
       casa02104,
       casa02107,
-      casa02108,
       casa02109,
-      casa02110,
-      casa02111,
     ],
     title: "Casa 021",
     location: "Indaiatuba, SP",

@@ -19,7 +19,7 @@ export const ProjectPage = () => {
         <p className="text-xl text-primaryOrange">{card.location}</p>
       </div>
       <div className="flex gap-8 max-md:flex-col-reverse">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 w-[30%]">
           {card.video ? (
             <video
               src={card.video}
@@ -33,17 +33,16 @@ export const ProjectPage = () => {
               } object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
             />
           ) : (
-            card.image &&
-            card.image.map((img) => (
+            card.image && (
               <img
-                src={img}
+                src={card.image[0]}
                 alt=""
-                className="rounded-md h-[400px] w-[100%] object-cover "
+                className="rounded-md h-[400px] w-[600px] object-cover "
               />
-            ))
+            )
           )}
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 w-[70%]">
           <div>
             <h2 className="font-bold text-xl text-primaryGreen pb-4">
               Sobre o projeto
@@ -66,6 +65,16 @@ export const ProjectPage = () => {
             <p>{card.description}</p>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center flex-wrap gap-3 mt-6 max-md:flex-col">
+        {card.image &&
+          card.image.map((img) => (
+            <img
+              src={img}
+              alt=""
+              className="rounded-md h-[400px] w-[30%] max-md:w-[100%] object-cover "
+            />
+          ))}
       </div>
     </div>
   );

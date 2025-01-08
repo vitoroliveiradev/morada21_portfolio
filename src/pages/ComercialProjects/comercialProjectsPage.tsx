@@ -21,7 +21,7 @@ export const ComercialProjectsPage = () => {
         <p className="text-xl text-primaryOrange">{card.location}</p>
       </div>
       <div className="flex gap-8 max-md:flex-col-reverse">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 w-[30%]">
           {card.video && (
             <video
               src={card.video}
@@ -30,20 +30,20 @@ export const ComercialProjectsPage = () => {
               muted
               className={`${
                 card.vertical
-                  ? "h-[400px] w-[1000px] max-md:w-[600px]"
+                  ? "h-[400px] w-[750px] max-md:w-[600px]"
                   : "w-[350px] h-[250px] max-md:w-[600px]"
-              } w-[1400px] object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
+              } object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
             />
           )}
           {card.image && (
             <img
               src={card.image[0]}
               alt=""
-              className="rounded-md h-[400px] w-[1200px] object-cover "
+              className="rounded-md h-[400px] w-[600px] object-cover "
             />
           )}
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 w-[70%]">
           <div>
             <h2 className="font-bold text-xl text-primaryGreen pb-4">
               Sobre o projeto
@@ -58,6 +58,12 @@ export const ComercialProjectsPage = () => {
             <p>
               <strong>Área: </strong>
               {card.area}
+            </p>
+          )}
+          {card.landArea && (
+            <p>
+              <strong>Área de Construção: </strong>
+              {card.landArea}
             </p>
           )}
           <p>
