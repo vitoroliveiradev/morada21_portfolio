@@ -108,7 +108,7 @@ export const cards: CardsProps[] = [
       bareli12,
     ],
     title: "Casa Bareli",
-    location: "Indaiatuba, SP",
+    location: "Campinas, SP",
     year: "2024",
     area: "15 m²",
     description:
