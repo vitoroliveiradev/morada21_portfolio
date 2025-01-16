@@ -31,7 +31,7 @@ export const Architecturalcards = [
     landArea: "421,74 m²",
     description:
       "Residência unifamiliar localizada em Indaiatuba, interior de São Paulo, projetada em um terreno em aclive que resultou em uma fachada linear, rica em elementos modernistas, e materiais naturais nobres, contemplada com aberturas generosas para a área externa, para recebimento do melhor da ventilação e iluminação naturais.",
-    vertical: true,
+    vertical: false,
   },
   {
     id: 17,
@@ -42,7 +42,7 @@ export const Architecturalcards = [
     landArea: "500 m²",
     description:
       "A casa 088 explora uma nova perspectiva, através da cobertura inclinada, e, valorização da privacidade sem abrir mão da iluminação e ventilação naturais.",
-    vertical: true,
+    vertical: false,
     video: casa02891,
   },
 ];

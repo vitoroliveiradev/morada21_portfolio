@@ -54,7 +54,7 @@ export const ComercialProjectsCards: ComercialProjectsCardsProps[] = [
     year: "2024",
     description:
       "Este projeto contribui para a revitalização de uma área urbana obsoleta. A construção deste Mall irá garantir maior movimentação e presença de pessoas na área, promovendo imediatamente segurança e mudança de atmosfera da área. Com a oferta de comércios e serviços, este espaço trará facilidade para os que frequentam esta área central de Campinas, além de conter espaços para o pedestre, como mobiliário urbano e espaços de permanência de qualidade.",
-    vertical: true,
+    vertical: false,
   },
   {
     id: 2,
@@ -76,6 +76,6 @@ export const ComercialProjectsCards: ComercialProjectsCardsProps[] = [
     year: "2024",
     description:
       "Empreendimento comercial, com estacionamento próprio, localizado na cidade de Jundiaí; o projeto oferece espaços como mini mercado, farmácia e pet shop, além de muitas outras lojas que podem ser alugadas para comércios e serviços para atender aos moradores e frequentadores da Vila Nambi.",
-    vertical: true,
+    vertical: false,
   },
 ];

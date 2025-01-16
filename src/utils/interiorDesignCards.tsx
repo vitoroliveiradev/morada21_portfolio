@@ -80,7 +80,7 @@ export const InteriorDesignCards: InteriorDesignCardsProps[] = [
     landArea: "54,00 m²",
     description:
       "O desafio deste projeto foi conciliar todas as necessidades da cliente, de forma a integrar os ambientes do térreo de forma harmônica (salas de estar, jantar e cozinha), e que proporcionasse interação aos usuários quando estivessem todos reunidos.",
-    vertical: true,
+    vertical: false,
   },
   {
     id: 2,
@@ -102,7 +102,7 @@ export const InteriorDesignCards: InteriorDesignCardsProps[] = [
     landArea: "421,74 m²",
     description:
       " Design de interiores sofisticado, que conversa com os elementos externos da residência, trazendo a mesma linguagem do externo para o interno, preservando a elegância e a sofisticação como um todo.",
-    vertical: true,
+    vertical: false,
   },
   {
     id: 3,
@@ -124,7 +124,7 @@ export const InteriorDesignCards: InteriorDesignCardsProps[] = [
     landArea: "43,16 m²",
     description:
       "O foco da criação deste projeto foi a praticidade que o cliente necessitava em seu dia-a-dia; superfícies de fácil limpeza, espaços de armazenamento e possibilidade de automação dos equipamentos comoaspirador robô, alexa e projetores foram as exigências que nos preocupamos em cumprir para atender ao morador deste apartamento.",
-    vertical: true,
+    vertical: false,
   },
   {
     id: 4,
@@ -147,6 +147,6 @@ export const InteriorDesignCards: InteriorDesignCardsProps[] = [
     area: "15 m²",
     description:
       "Este projeto de reforma consistiu em ampliar os espaços de armazenamento para melhor atender os moradores desta residência; o espaço abaixo da escada foi o maior protagonista desta ampliação, pois, anteriormente, encontrava-se vazio, e agora, oferecerá amplo espaço de armazenamento para despensa, louças (cristaleira), e também um espaço de bar, para as bebidas, e adega climatizada.",
-    vertical: true,
+    vertical: false,
   },
 ];

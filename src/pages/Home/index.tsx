@@ -28,7 +28,7 @@ export const Home = () => {
                     className={`${
                       card.vertical
                         ? "h-[600px] w-[350px] max-md:w-[600px]"
-                        : "w-[350px] h-[250px] max-md:w-[600px]"
+                        : "w-[350px] h-[400px] max-md:w-[600px]"
                     }  object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
                   />
                 ) : (

@@ -14,7 +14,7 @@ export const Footer = () => {
           <div className="flex flex-col">
             <p className="text-md">Ana Silveira</p>
             <span className="text-sm">ARQUITETA E URBANISTA</span>
-            <span className="text-sm">CAU:</span>
+            <span className="text-sm">CAU: A000000-0</span>
           </div>
           <div className="flex flex-col">
             <p className="text-md">Thais Galvão</p>

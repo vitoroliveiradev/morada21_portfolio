@@ -89,7 +89,7 @@ export const cards: CardsProps[] = [
     area: "500 m²",
     description:
       "Residência unifamiliar localizada em Indaiatuba, interior de São Paulo, projetada em um terreno em aclive que resultou em uma fachada linear, rica em elementos modernistas, e materiais naturais nobres, contemplada com aberturas generosas para a área externa, para recebimento do melhor da ventilação e iluminação naturais.",
-    vertical: true,
+    vertical: false,
   },
   {
     id: 3,
@@ -132,7 +132,7 @@ export const cards: CardsProps[] = [
     area: "15 m²",
     description:
       "Local amplo com cores claras e diferentes texturas de materiais. O projeto foi pensado para ser um ambiente de trabalho agradável e confortável.",
-    vertical: true,
+    vertical: false,
   },
   {
     id: 5,
@@ -177,6 +177,6 @@ export const cards: CardsProps[] = [
     area: "15 m²",
     description:
       "Local amplo com cores claras e diferentes texturas de materiais. O projeto foi pensado para ser um ambiente de trabalho agradável e confortável.",
-    vertical: true,
+    vertical: false,
   },
 ];
