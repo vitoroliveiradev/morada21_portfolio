@@ -28,7 +28,7 @@ export const Footer = () => {
           </div>
         </div>
         <div>
-          Tel: +55 (19) 9 9204-4443 | morada21@morada21.com Indaiatuba, SP.
+          Tel: +55 (19) 9 9204-4443 | morada21@morada21.com Campinas, SP.
         </div>
       </div>
       <div className="px-[90px] mt-12 flex gap-4">
