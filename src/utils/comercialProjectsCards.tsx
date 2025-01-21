@@ -61,11 +61,11 @@ export const ComercialProjectsCards: ComercialProjectsCardsProps[] = [
     title: "Vila Nambi",
     location: "Jundiai, SP",
     image: [
+      nambi05,
       nambi01,
       nambi02,
       nambi03,
       nambi04,
-      nambi05,
       nambi06,
       nambi07,
       nambi08,

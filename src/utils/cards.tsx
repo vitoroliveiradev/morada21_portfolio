@@ -46,6 +46,17 @@ import nascimento09 from "../assets/interiorDesigns/nascimento/09.jpg";
 import nascimento10 from "../assets/interiorDesigns/nascimento/10.jpg";
 import nascimento11 from "../assets/interiorDesigns/nascimento/11.jpg";
 
+import nambi01 from "../assets/ComercialProjects/nambi/01.jpg";
+import nambi02 from "../assets/ComercialProjects/nambi/02.jpg";
+import nambi03 from "../assets/ComercialProjects/nambi/03.jpg";
+import nambi04 from "../assets/ComercialProjects/nambi/04.jpg";
+import nambi05 from "../assets/ComercialProjects/nambi/05.jpg";
+import nambi06 from "../assets/ComercialProjects/nambi/06.jpg";
+import nambi07 from "../assets/ComercialProjects/nambi/07.jpg";
+import nambi08 from "../assets/ComercialProjects/nambi/08.jpg";
+import nambi09 from "../assets/ComercialProjects/nambi/09.jpg";
+import nambi10 from "../assets/ComercialProjects/nambi/10.jpg";
+
 type CardsProps = {
   id: number;
   image?: string[];
@@ -56,13 +67,14 @@ type CardsProps = {
   area?: string;
   year?: string;
   description?: string;
+  landArea?: string;
 };
 
 export const cards: CardsProps[] = [
   {
     id: 1,
     image: [
-      casa02108 ,
+      casa02108,
       casa02101,
       casa02102,
       casa02103,
@@ -117,21 +129,24 @@ export const cards: CardsProps[] = [
   },
   {
     id: 4,
+    title: "Vila Nambi",
+    location: "Jundiai, SP",
     image: [
-      casa02108,
-      casa02101,
-      casa02102,
-      casa02103,
-      casa02104,
-      casa02107,
-      casa02109,
+      nambi05,
+      nambi01,
+      nambi02,
+      nambi03,
+      nambi04,
+      nambi06,
+      nambi07,
+      nambi08,
+      nambi09,
+      nambi10,
     ],
-    title: "Casa 021",
-    location: "Indaiatuba, SP",
+    landArea: "1.057,00 m²",
     year: "2024",
-    area: "15 m²",
     description:
-      "Local amplo com cores claras e diferentes texturas de materiais. O projeto foi pensado para ser um ambiente de trabalho agradável e confortável.",
+      "Empreendimento comercial, com estacionamento próprio, localizado na cidade de Jundiaí; o projeto oferece espaços como mini mercado, farmácia e pet shop, além de muitas outras lojas que podem ser alugadas para comércios e serviços para atender aos moradores e frequentadores da Vila Nambi.",
     vertical: false,
   },
   {

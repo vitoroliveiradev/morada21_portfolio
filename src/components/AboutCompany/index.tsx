@@ -6,12 +6,14 @@ export const AboutCompany = () => {
     <Container>
       <h1 className="text-[30px] max-md:text-center mt-4">Nossa História</h1>
       <hr />
-      <p className="text-[20px] max-w-[80%] mt-4">
-        O Morada 21, fundado em 2023, é uma associação de arquitetas, liderada
-        pelas sócias fundadoras Thais Galvão, Ana Silveira, e Talita Brito,
-        todas formadas pela Universidade Paulista, localizada em Campinas.
-      </p>
-      <div className="mt-[64px] grid grid-cols-2 gap-4">
+      <div className="max-md:flex max-md:items-center max-md:justify-center">
+        <p className="text-[20px] max-w-[80%] mt-4">
+          O Morada 21, fundado em 2023, é uma associação de arquitetas, liderada
+          pelas sócias fundadoras Thais Galvão, Ana Silveira, e Talita Brito,
+          todas formadas pela Universidade Paulista, localizada em Campinas.
+        </p>
+      </div>
+      <div className="mt-[64px] grid grid-cols-2 gap-4 max-md:grid-cols-1 max-md:flex max-md:flex-col-reverse max-md:justify-center max-md:items-center">
         <div className="w-[90%]">
           <h3 className="text-[18px]">
             O Morada 21 surgiu de um propósito em comum: criação e reprodução de

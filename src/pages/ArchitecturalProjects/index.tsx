@@ -14,7 +14,7 @@ export const ArchitecturalProjects = () => {
           </h1>
           <hr />
         </div>
-        <div className="flex gap-4 flex-wrap items-center">
+        <div className="flex gap-4 flex-wrap items-center max-md:justify-center">
           {Architecturalcards.map((item) => (
             <div
               className="bg-white shadow-2xl w-[350px] max-md:w-[80%] rounded-sm"
@@ -30,7 +30,7 @@ export const ArchitecturalProjects = () => {
                   className={`${
                     item.vertical
                       ? "h-[350px] w-[350px] max-md:w-[400px] max-md:h-[400px]"
-                      : "w-[350px] h-[350px] max-md:w-[400px] max-md:h-[400px]"
+                      : "w-[350px] h-[350px] max-md:w-[100%] max-md:h-[400px]"
                   }  object-cover rounded-sm cursor-pointer hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out`}
                 />
               ) : (

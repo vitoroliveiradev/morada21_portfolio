@@ -19,7 +19,7 @@ export const InteriorDesignPage = () => {
         <p className="text-xl text-primaryOrange">{card.location}</p>
       </div>
       <div className="flex gap-8 max-md:flex-col-reverse">
-        <div className="flex flex-col gap-8 w-[30%]">
+        <div className="flex flex-col gap-8 w-[30%] max-md:hidden">
           {card.video ? (
             <video
               src={card.video}
@@ -53,10 +53,12 @@ export const InteriorDesignPage = () => {
             <strong>Ano: </strong>
             {card.year}
           </p>
-          <p>
-            <strong>Área: </strong>
-            {card.area}
-          </p>
+          {card.area && (
+            <p>
+              <strong>Área: </strong>
+              {card.area}
+            </p>
+          )}
           {card.landArea && (
             <p>
               <strong>Área de Construção: </strong>
