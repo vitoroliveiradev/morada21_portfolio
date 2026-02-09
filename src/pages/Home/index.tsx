@@ -3,6 +3,7 @@ import { Slider } from "../../components/Slider";
 import { Container } from "../../components/Container";
 import { useNavigate } from "react-router-dom";
 import { cards } from "../../utils/cards";
+import { WhatsAppButton } from "../../components/WhatsAppButton";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -49,6 +50,10 @@ export const Home = () => {
               </div>
             ))}
           </div>
+          <WhatsAppButton
+            phoneNumber="5519992044443"
+            message="Olá! Vi o site de vocês e gostaria de mais informações sobre projetos."
+          />
         </section>
       </Container>
     </>
