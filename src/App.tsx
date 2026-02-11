@@ -4,10 +4,15 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { routes } from "./utils/routes";
 import { BackTopButton } from "./components/BackTopButton";
+import { WhatsAppButton } from "./components/WhatsAppButton";
 
 function App() {
   return (
     <BrowserRouter>
+      <WhatsAppButton
+        phoneNumber="5519992044443"
+        message="Olá! Vi o site de vocês e gostaria de mais informações sobre projetos."
+      />
       <div className="bg-[rgb(255 255 255)] relative">
         <div className="absolute right-6 top-[89%] z-50">
           <BackTopButton />
