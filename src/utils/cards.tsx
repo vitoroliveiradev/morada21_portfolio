@@ -12,6 +12,16 @@ import bareli09 from "../assets/interiorDesigns/bareli/09.jpg";
 import bareli10 from "../assets/interiorDesigns/bareli/10.jpg";
 import bareli11 from "../assets/interiorDesigns/bareli/11.jpg";
 import bareli12 from "../assets/interiorDesigns/bareli/12.jpg";
+import bareli13 from "../assets/interiorDesigns/bareli/13.jpg";
+import bareli14 from "../assets/interiorDesigns/bareli/14.jpg";
+import bareli15 from "../assets/interiorDesigns/bareli/15.jpg";
+import bareli16 from "../assets/interiorDesigns/bareli/16.jpg";
+import bareli17 from "../assets/interiorDesigns/bareli/17.jpg";
+import bareli18 from "../assets/interiorDesigns/bareli/18.jpg";
+import bareli19 from "../assets/interiorDesigns/bareli/19.jpg";
+import bareli20 from "../assets/interiorDesigns/bareli/20.jpg";
+import bareli21 from "../assets/interiorDesigns/bareli/21.jpg";
+import bareli22 from "../assets/interiorDesigns/bareli/22.jpg";
 
 import casa02101 from "../assets/ArchitecturalProjects/CASA 021/01.jpg";
 import casa02102 from "../assets/ArchitecturalProjects/CASA 021/02.jpg";
@@ -33,6 +43,7 @@ import guimaraes07 from "../assets/interiorDesigns/guimaraes/07.jpg";
 import guimaraes08 from "../assets/interiorDesigns/guimaraes/08.jpg";
 import guimaraes09 from "../assets/interiorDesigns/guimaraes/09.jpg";
 import guimaraes10 from "../assets/interiorDesigns/guimaraes/10.jpg";
+import guimaraes11 from "../assets/interiorDesigns/guimaraes/11.jpeg";
 
 import nascimento01 from "../assets/interiorDesigns/nascimento/01.jpg";
 import nascimento02 from "../assets/interiorDesigns/nascimento/02.jpg";
@@ -118,6 +129,16 @@ export const cards: CardsProps[] = [
       bareli10,
       bareli11,
       bareli12,
+      bareli13,
+      bareli14,
+      bareli15,
+      bareli16,
+      bareli17,
+      bareli18,
+      bareli19,
+      bareli20,
+      bareli21,
+      bareli22,
     ],
     title: "Casa Bareli",
     location: "Campinas, SP",
@@ -162,8 +183,9 @@ export const cards: CardsProps[] = [
       guimaraes08,
       guimaraes09,
       guimaraes10,
+      guimaraes11,
     ],
-    title: "Casa Guimarães",
+    title: "Apartamento Guimarães",
     location: "Indaiatuba, SP",
     year: "2024",
     area: "15 m²",

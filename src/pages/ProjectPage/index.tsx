@@ -74,7 +74,7 @@ export const ProjectPage = () => {
             <img
               src={img}
               alt=""
-              className="rounded-md h-[400px] w-[30%] max-md:w-[100%] object-cover "
+              className="rounded-md h-[400px] w-[30%] max-md:w-[100%] object-cover border"
             />
           ))}
       </div>
