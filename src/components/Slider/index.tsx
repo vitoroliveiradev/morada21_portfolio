@@ -8,9 +8,10 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 
-import image1 from "../../assets/ArchitecturalProjects/RENDER POSTAGEM 4.jpg";
-import image2 from "../../assets/ArchitecturalProjects/RENDER POSTAGEM 5.jpg";
-import image3 from "../../assets/ArchitecturalProjects/render total.jpg";
+import image1 from "../../assets/slides/01.jpeg";
+import image2 from "../../assets/slides/02.jpeg";
+import image3 from "../../assets/slides/03.jpeg";
+import image4 from "../../assets/slides/04.jpeg";
 
 const cardsSlides = [
   {
@@ -21,6 +22,9 @@ const cardsSlides = [
   },
   {
     image: image3,
+  },
+  {
+    image: image4,
   },
 ];
 
